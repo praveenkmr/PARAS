@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_admin"
+    tools:context="com.praveen.naregaregistration.AddJobActivity">
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="504dp"
+        android:orientation="vertical"
+        android:background="@drawable/signup_card">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Registration"
+            android:textColor="#00BFFF"
+            android:textSize="30dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="0dp"
+            android:textStyle=""
+            android:textAlignment="center"
+            android:background="@drawable/topic_background"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/editTextJobName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/loginbtn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Job Name"
+                android:inputType="text"
+                android:textColorHint="@color/btn_login"
+                android:textSize="17dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/loginbtn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/editTextJobDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/loginbtn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Job Description"
+                android:inputType="text"
+                android:textColorHint="@color/btn_login"
+                android:textSize="17dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/editTextJobLatitute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Job Latitute"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/btn_login"
+                android:textSize="17dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/editTextJobLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textInputLayout3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Job Longitude"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/btn_login"
+                android:textSize="17dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/editTextJobRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Job Radius"
+                android:inputType="text|numberSigned"
+                android:textColorHint="@color/btn_login"
+                android:textSize="17dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/editTextJobRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Job Rate"
+                android:inputType="text|numberSigned"
+                android:textColorHint="@color/btn_login"
+                android:textSize="17dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAddJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button1"
+            android:padding="10dp"
+            android:text="ADD JOB"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
