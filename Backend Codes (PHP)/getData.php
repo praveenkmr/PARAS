@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @author lolkittens
- * @copyright 2017
- */
-
 if($_SERVER['REQUEST_METHOD'])
 {
     require_once('dbConnect.php');
